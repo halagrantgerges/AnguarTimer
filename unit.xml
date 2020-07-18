@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 80.0.3987 (Linux 0.0.0)" package="unit" timestamp="2020-07-16T18:21:45" id="0" hostname="thinkpad2" tests="13" errors="0" failures="9" time="0.419">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/80.0.3987.132 Safari/537.36"/>
+  </properties>
+  <testcase name="TimerComponent time variables should be pre-assigned" time="0.061" classname="unit.TimerComponent"/>
+  <testcase name="TimerComponent check resetVariables" time="0.043" classname="unit.TimerComponent"/>
+  <testcase name="TimerComponent check time edit functions" time="0.029" classname="unit.TimerComponent"/>
+  <testcase name="TimerComponent check start and stop" time="0.096" classname="unit.TimerComponent">
+    <failure type="">Expected 57 to equal 58.
+    at Object.&lt;anonymous&gt; src/app/timer/timer.component.spec.ts:72:31)
+    at Object.&lt;anonymous&gt; node_modules/@angular/core/@angular/core/testing.es5.js:352:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/proxy.js:129:1)
+</failure>
+    <failure type="">Error: 2 periodic timer(s) still in the queue.
+    at Object.&lt;anonymous&gt; node_modules/@angular/core/@angular/core/testing.es5.js:359:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/proxy.js:129:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/jasmine-patch.js:145:1)
+    at Object.&lt;anonymous&gt; node_modules/zone.js/dist/jasmine-patch.js:160:1)
+</failure>
+  </testcase>
+  <testcase name="TimerComponent check if minutes and seconds are double digit" time="0.022" classname="unit.TimerComponent"/>
+  <testcase name="TimerComponent check if regular timer is triggered" time="0.021" classname="unit.TimerComponent">
+    <failure type="">Error: 1 periodic timer(s) still in the queue.
+    at Object.&lt;anonymous&gt; node_modules/@angular/core/@angular/core/testing.es5.js:359:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/proxy.js:129:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/jasmine-patch.js:145:1)
+    at Object.&lt;anonymous&gt; node_modules/zone.js/dist/jasmine-patch.js:160:1)
+</failure>
+  </testcase>
+  <testcase name="TimerComponent check multiple clicks on start button" time="0.022" classname="unit.TimerComponent">
+    <failure type="">Expected 23 to equal 22.
+    at Object.&lt;anonymous&gt; src/app/timer/timer.component.spec.ts:102:32)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/proxy.js:129:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+</failure>
+  </testcase>
+  <testcase name="TimerComponent check when timer reached 0000 timer should stop" time="0.021" classname="unit.TimerComponent">
+    <failure type="">Error: 1 periodic timer(s) still in the queue.
+    at Object.&lt;anonymous&gt; node_modules/@angular/core/@angular/core/testing.es5.js:359:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/proxy.js:129:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/jasmine-patch.js:145:1)
+    at Object.&lt;anonymous&gt; node_modules/zone.js/dist/jasmine-patch.js:160:1)
+</failure>
+  </testcase>
+  <testcase name="TimerComponent when timer reached to 0000 start and stop button should not do anything" time="0.023" classname="unit.TimerComponent">
+    <failure type="">Expected true to equal false.
+    at Object.&lt;anonymous&gt; src/app/timer/timer.component.spec.ts:128:31)
+    at Object.&lt;anonymous&gt; node_modules/@angular/core/@angular/core/testing.es5.js:352:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/proxy.js:129:1)
+</failure>
+    <failure type="">Error: 2 periodic timer(s) still in the queue.
+    at Object.&lt;anonymous&gt; node_modules/@angular/core/@angular/core/testing.es5.js:359:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/proxy.js:129:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/jasmine-patch.js:145:1)
+    at Object.&lt;anonymous&gt; node_modules/zone.js/dist/jasmine-patch.js:160:1)
+</failure>
+  </testcase>
+  <testcase name="TimerComponent check when we click on -5 button and if it reached to 0000 it should stick to 0000 and stop the timer" time="0.021" classname="unit.TimerComponent">
+    <failure type="">Error: 1 periodic timer(s) still in the queue.
+    at Object.&lt;anonymous&gt; node_modules/@angular/core/@angular/core/testing.es5.js:359:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/proxy.js:129:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/jasmine-patch.js:145:1)
+    at Object.&lt;anonymous&gt; node_modules/zone.js/dist/jasmine-patch.js:160:1)
+</failure>
+  </testcase>
+  <testcase name="TimerComponent check when timer ends and when Reset button clicked it should reset to 25" time="0.02" classname="unit.TimerComponent">
+    <failure type="">Error: 1 periodic timer(s) still in the queue.
+    at Object.&lt;anonymous&gt; node_modules/@angular/core/@angular/core/testing.es5.js:359:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/proxy.js:129:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/jasmine-patch.js:145:1)
+    at Object.&lt;anonymous&gt; node_modules/zone.js/dist/jasmine-patch.js:160:1)
+</failure>
+  </testcase>
+  <testcase name="TimerComponent check when timer is turned on and clicked on reset it should reseted to 25 and timer should stoped as well" time="0.021" classname="unit.TimerComponent">
+    <failure type="">Error: 1 periodic timer(s) still in the queue.
+    at Object.&lt;anonymous&gt; node_modules/@angular/core/@angular/core/testing.es5.js:359:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/proxy.js:129:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/jasmine-patch.js:145:1)
+    at Object.&lt;anonymous&gt; node_modules/zone.js/dist/jasmine-patch.js:160:1)
+</failure>
+  </testcase>
+  <testcase name="TimerComponent check when timer is stopped and clicked on reset it should reseted to 25" time="0.019" classname="unit.TimerComponent">
+    <failure type="">Error: 1 periodic timer(s) still in the queue.
+    at Object.&lt;anonymous&gt; node_modules/@angular/core/@angular/core/testing.es5.js:359:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/proxy.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/proxy.js:129:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/jasmine-patch.js:145:1)
+    at Object.&lt;anonymous&gt; node_modules/zone.js/dist/jasmine-patch.js:160:1)
+</failure>
+  </testcase>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
